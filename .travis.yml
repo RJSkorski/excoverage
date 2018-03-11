@@ -1,0 +1,14 @@
+language: elixir
+sudo: false
+
+elixir:
+  - '1.6.0'
+otp_release:
+  - '20.0'
+install:
+  - mix deps.get
+script:
+  - mix test --cover
+notifications:
+  recipients:
+    - rjskorski@github.com
