@@ -11,8 +11,7 @@ defmodule Excoverage.Mixfile do
       description: description(),
       package: package(),
       deps: deps(),
-      name: "Excoverage",
-
+      name: "Excoverage"
     ]
   end
 
@@ -24,7 +23,8 @@ defmodule Excoverage.Mixfile do
 
   defp deps do
     [
-      {:dialyxir, "~> 0.4", only: [:dev]}
+      {:dialyxir, "~> 0.4", only: [:dev]},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 
@@ -35,7 +35,7 @@ defmodule Excoverage.Mixfile do
   defp package() do
     [
       name: "excoverage",
-      files: ["lib", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
       maintainers: ["RJSkorski"],
       licenses: ["Apache 2.0"],
       links: %{"GitHub" => "https://github.com/RJSkorski/excoverage"}
