@@ -1,5 +1,7 @@
 # WIP: Excoverage
 
+[![Build Status](https://travis-ci.org/RJSkorski/excoverage.svg?branch=master)](https://travis-ci.org/RJSkorski/excoverage)
+
 A tool for calculating test coverage using ExUnit for running tests.
 For now it calculates function coverage only.
 
